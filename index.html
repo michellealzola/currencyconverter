@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Michelle's Currency Converter Page</title>
+        <meta name = "author" content="Michelle Alzola">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">      
+        <link rel="stylesheet" type = "text/css" href="./styles/currencystyles.css">  
+
+    </head>
+
+    <body>
+        <div class = "container">
+            <header>
+                <h1>Michelle's Currency Converter Page</h1>
+            </header>
+
+            <main>
+                <div>
+                    <h2>Currency on Hand</h2>
+                    <select id="fromCurrencyList">
+                    <option value="">Choose currency</option>
+                    <option value="">Euro</option>
+                    <option value="">US Dollar</option>
+                    <option value="">Canadian Dollar</option>
+                    <option value="">Bitcoin Digital Currency</option>
+                    <option value="">Ethereum Digital Currency</option>
+                    </select>
+                </div>
+
+                <div>
+                    
+                    <h2>Amount</h2>
+                    
+                    <input id ="fromAmount" type="number" name="fromAmountValue" min="0">
+                </div>
+
+                <div>
+                    <h2>Convert to:</h2>
+                    <select id="toCurrencyList" onchange="convertCurrency();">
+                    <option value="">Choose currency</option>
+                    <option value="">Euro</option>
+                    <option value="">US Dollar</option>
+                    <option value="">Canadian Dollar</option>
+                    <option value="">Bitcoin Digital Currency</option>
+                    <option value="">Ethereum Digital Currency</option>
+                    </select>
+                </div>
+
+                <div class="conversionWrapper">
+                    
+                    <h2>Conversion Value</h2>
+                    
+                    <div class = "conversionValueWrapper" id="conversionValue" onchange="convertCurrency();">                        
+                    </div>              
+                    
+                </div>
+
+
+            </main>
+            <script src="./scripts/crrencyscripts.js"></script>
+        </div>
+        
+    </body>
+</html>
